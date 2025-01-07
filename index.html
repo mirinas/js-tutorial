@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS exercise</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -15,7 +16,9 @@
 
     <input onkeypress="submitNameEnter(event)" id="name-input" />
     <button onclick="submitName()">Submit</button>
-    <p>Name must be 3 charaters or more</p>
+    <div>
+        <p id="notification"></p>
+    </div>
     <p>Hello, <span id="name-span">no name</span></p>
 
     <script src="script.js"></script>

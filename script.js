@@ -36,7 +36,7 @@ function submitName() {
     let input = document.querySelector('#name-input');
     // 2. patikrinti ar ivestis teisinga
     if(input.value.length < 3) {
-        alert('Name must be 3 charaters or more');
+        alert('error', 'Name must be at least 3 characters');
         return;
     }
 
@@ -44,4 +44,16 @@ function submitName() {
     document.querySelector('#name-span').innerHTML = input.value;
     // 4. isvalyti <input> reiksme
     input.value = '';
+    alert('success', 'Successfuly submitted name!');
+}
+
+
+function alert(type, text) {
+    let notification = document.querySelector('#notification');
+    // 1. nustatyti pranesimo teksta
+    notification.innerHTML = text;
+    // 2. nustatyti pranesimo klase
+    notification.className = type;
+    // 3. parodyti
+    notification.style.display = 'inline-block';
 }
