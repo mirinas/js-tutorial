@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS exercise</title>
 </head>
 <body>
-
-    <!-- PERTRAUKA BAIGIASI 13.32 -->
 
     <h1 id="title">Good morning</h1>
     <button onclick="applyStyle()">Apply style</button>
     <button onclick="removeStyle()">Remove style</button>
+
     <hr>
 
-    <input id="name-input" />
-    <button>Submit</button>
+    <input onkeypress="submitNameEnter(event)" id="name-input" />
+    <button onclick="submitName()">Submit</button>
+    <p>Name must be 3 charaters or more</p>
     <p>Hello, <span id="name-span">no name</span></p>
 
     <script src="script.js"></script>
