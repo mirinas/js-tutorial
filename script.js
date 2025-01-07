@@ -5,11 +5,21 @@
 
 // kintamojo sukūrimas ir stiliaus pakeitimas
 
-function applyStyle() {
 
-    let element = document.querySelector('#title');
+let element = document.querySelector('#title');
+
+function applyStyle() {
     // fono spalva
     element.style.background = 'lightblue';
     // teksto spalva
     element.style.color = 'green';
 }
+
+function removeStyle() {
+    // fono spalva
+    element.style.background = '';
+    // teksto spalva
+    element.style.color = '';
+}
+
+// funkcija kuri nuima stiliu
