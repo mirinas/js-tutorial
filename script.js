@@ -3,9 +3,13 @@
 
 // alert(a + ' ' + b);
 
+// kintamojo sukūrimas ir stiliaus pakeitimas
 
-let element = document.querySelector('#title');
-// fono spalva
-element.style.background = 'lightblue';
-// teksto spalva
-element.style.color = 'green';
+function applyStyle() {
+
+    let element = document.querySelector('#title');
+    // fono spalva
+    element.style.background = 'lightblue';
+    // teksto spalva
+    element.style.color = 'green';
+}
