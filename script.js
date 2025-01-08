@@ -5,6 +5,33 @@
 // alert(a + ' ' + b);
 
 
+
+let numbers = [10, 54, 36, 78, 2, 65, 87, 123, 4, 15];
+
+// sudeti visus skaicius i viena
+let ats = 0;
+for(let x of numbers) {
+    // ats = ats + x;
+    ats += x;
+}
+console.log('suma: ' + ats);
+
+// rasti didziausia skaiciu
+let max = numbers[0];
+for(let x of numbers) {
+    if(x > max) {
+        max = x;
+    }
+}
+console.log('max: ' + max);
+
+
+
+
+
+
+
+
 // funkcija kuri uzdeda stiliu
 let element = document.querySelector('#title');
 
